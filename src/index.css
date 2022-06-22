@@ -1,0 +1,60 @@
+
+.next_icon, .prev_icon {
+    border-radius: 2em;
+    color: white;
+    background-image: linear-gradient(45deg, hsl(var(--color), 50%, 50%), hsl(var(--color), 50%, 100%));
+    font-size: 60px;
+    
+    
+    transition-duration: 0.5s;
+}
+.prev_icon {
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    /* padding-left: 0.5em; */
+    rotate: 180deg;
+    /* transform: translateX(-50%); */
+}
+.next_icon {
+    position: absolute;
+    /* padding-left: 0.5em; */
+    left: 0px;
+    bottom: 50%;
+    /* transform: translateX(-100%); */
+}
+
+
+
+.next_icon:hover, .prev_icon:hover {
+    /* transform: translateX(50%); */
+        padding-left: 0.4em;
+    font-size: 4.2em;
+    color: hsl(var(--color), 50%, 55%);
+    
+}
+
+body {  display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    /* width: 100%; */
+    /*border: solid black 2px;*/
+    background-image: linear-gradient(45deg, hsl(var(--color), 10%, 50%), hsl(var(--color), 10%, 100%));
+    /*background-color: red;*/
+}
+  #root {
+    /* margin: 10%; */
+    /* padding: 10%; */
+    height: 100vh;
+    /* width: 90%; */
+}  
+.centeredApp{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: red; */
+}

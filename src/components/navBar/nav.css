@@ -1,11 +1,11 @@
 
-.container {
+.containerNav {
     position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0.5rem;
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     background: hsl(550, 80%, 30%);
     height: 5em;
     width: 20em;
@@ -16,7 +16,7 @@
     transition-duration: 1s;
 }
 
-.icon {
+.iconNav {
     padding: 0.5rem;
     margin: 0.5rem;
     font-size: 1.5rem;
@@ -25,7 +25,7 @@
 
 }
 
-.icon:hover {
+.iconNav:hover {
     font-size: 1.5rem;
     background: hsl(600, 80%, 30%);
 
@@ -33,6 +33,6 @@
 
 }
 
-.container:hover{
+.containerNav:hover{
     font-size: 1.2rem;
 }
