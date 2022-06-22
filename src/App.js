@@ -124,7 +124,7 @@ export default class App extends Component {
                 }} className={"prev_icon ".concat(this.state.index===0?" hideLeft":" showLeft")}/>
                 <div className="container-test">
                     <div
-                        className={"item item1 ".concat(classNavName(2))}>
+                        className={"item item1 ".concat(classNavName(0))}>
                         <Start/>
                     </div>
                     <div
@@ -132,7 +132,7 @@ export default class App extends Component {
                         <Description/>
                     </div>
                     <div
-                        className={"item item3 ".concat(classNavName(0))}>
+                        className={"item item3 ".concat(classNavName(2))}>
                         <Contact/>
                     </div>
                 </div>
