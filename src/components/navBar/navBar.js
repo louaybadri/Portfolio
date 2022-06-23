@@ -1,38 +1,52 @@
 import {Link} from "react-scroll";
-import {MdNavigateBefore, MdNavigateNext} from "react-icons/md";
+import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import {AiOutlineContacts} from "react-icons/ai"
 import {FaHome} from "react-icons/fa";
 import {IoIosNotifications} from "react-icons/io";
 import React, {useState} from "react";
 import "./nav.css"
 
-function NavBar() {
+function NavBar(props) {
 
-
-    const [index, setIndex] = useState(0);
-    const pages = ["home", "notif", "else1", "else2"];
-    function verif(index){
-        index = index<0 ? 0 : index;
-        index = index>3 ? 3 : index;
-        setIndex(index)
-
+    const [index, setIndex] = useState(props.index);
+    // const pages = ["home", "notif", "else1", "else2"];
+    const passData = (data) => {
+        props.passData(data)
+        setIndex(data)
     }
 
     return (
         <div className="containerNav">
-            <Link to={pages[index - 1]} smooth={true} spy={true}>
-                <MdNavigateBefore onClick={() => verif(index - 1)} className="iconNav back_icon"></MdNavigateBefore>
-            </Link>
-            <Link to="home" smooth={true} spy={true}>
-                <FaHome onClick={() => setIndex(0)} className="iconNav home_icon"></FaHome>
-            </Link>
-            <Link to="notif" smooth={true} spy={true}>
+            {index !== 2 ? <MdNavigateNext onClick={() => {
+                // props.prev()
+                passData(index === 2 ? 2 : index + 1)
+            }} className="iconNav showLeft"></MdNavigateNext>
+                : <MdNavigateNext className="iconNav hideLeft "></MdNavigateNext>}
+              
+                <FaHome onClick={() => {
+                    setIndex(0)
+                    passData(0)
+                }} className="iconNav home_icon"></FaHome>
+            
+            <AiOutlineContacts onClick={() => {
+                setIndex(1)
+                 passData(1)
+                }} className="iconNav "></AiOutlineContacts>
+            
                 <IoIosNotifications onClick={
-                    () => setIndex(1)
+                    () => {
+                        setIndex(2)
+                        passData(2)
+                    }
                 } className="iconNav notif_icon"></IoIosNotifications>
-            </Link>
-            <Link to={pages[index + 1]} smooth={true} spy={true}>
-                <MdNavigateNext onClick={() => verif(index + 1)} className="iconNav "></MdNavigateNext>
-            </Link>
+              {index!==0?<MdNavigateBefore onClick={() => {
+                    // props.next()
+                    passData(index===0?0:index-1)
+                }} className="iconNav showRight back_icon"></MdNavigateBefore>:<MdNavigateBefore className="iconNav hideRight back_icon"></MdNavigateBefore>}
+            
+            
+            {/* AiOutlineContacts */}
+            
 
         </div>)
 

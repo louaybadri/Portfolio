@@ -4,20 +4,18 @@
     color: white;
     background-image: linear-gradient(45deg, hsl(var(--color), 50%, 50%), hsl(var(--color), 50%, 100%));
     font-size: 60px;
-    
-    
     transition-duration: 0.5s;
 }
 .prev_icon {
-    position: absolute;
+    position: fixed;
     right: 0px;
     bottom: 50%;
     /* padding-left: 0.5em; */
-    rotate: 180deg;
+    /* rotate: 180deg; */
     /* transform: translateX(-50%); */
 }
 .next_icon {
-    position: absolute;
+    position: fixed;
     /* padding-left: 0.5em; */
     left: 0px;
     bottom: 50%;
@@ -28,10 +26,13 @@
 
 .next_icon:hover, .prev_icon:hover {
     /* transform: translateX(50%); */
-        padding-left: 0.4em;
+    padding-left: 0.4em;
     font-size: 4.2em;
     color: hsl(var(--color), 50%, 55%);
-    
+}
+.prev_icon:hover{
+    padding-right: 0.4em;
+    padding-left: 0;
 }
 
 body {  display: flex;
