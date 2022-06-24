@@ -1,9 +1,9 @@
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
-import {AiOutlineContacts} from "react-icons/ai"
-import {FaHome} from "react-icons/fa";
-import {IoIosNotifications} from "react-icons/io";
-import React, {useState} from "react";
+import { AiOutlineContacts } from "react-icons/ai"
+import { FaHome } from "react-icons/fa";
+import { IoIosNotifications } from "react-icons/io";
+import React, { useState } from "react";
 import "./nav.css"
 
 function NavBar(props) {
@@ -17,36 +17,65 @@ function NavBar(props) {
 
     return (
         <div className="containerNav">
-            {index !== 2 ? <MdNavigateNext onClick={() => {
-                // props.prev()
-                passData(index === 2 ? 2 : index + 1)
-            }} className="iconNav showLeft"></MdNavigateNext>
-                : <MdNavigateNext className="iconNav hideLeft "></MdNavigateNext>}
-              
-                <FaHome onClick={() => {
-                    setIndex(0)
-                    passData(0)
-                }} className="iconNav home_icon"></FaHome>
-            
-            <AiOutlineContacts onClick={() => {
+            {props.index !== 2 ?
+                <div
+                    className="nav__icon showLeft" onClick={() => {
+                        // props.prev()
+                        passData(index === 2 ? 2 : index + 1)
+                    }}
+                >
+                    <MdNavigateNext className="iconNav">
+                    </MdNavigateNext>
+
+                    <div>NEXT</div>
+                </div>
+                : <div className="nav__icon hideLeft "><MdNavigateNext ></MdNavigateNext>
+
+                </div>}
+
+
+            <div className="nav__icon" onClick={() => {
+                setIndex(0)
+                passData(0)
+            }}>
+                <FaHome className="iconNav"></FaHome>
+                <div>INTRODUCTION</div>
+            </div>
+            <div className="nav__icon" onClick={() => {
                 setIndex(1)
-                 passData(1)
-                }} className="iconNav "></AiOutlineContacts>
-            
-                <IoIosNotifications onClick={
-                    () => {
-                        setIndex(2)
-                        passData(2)
+                passData(1)
+            }}>
+                <AiOutlineContacts className="iconNav "></AiOutlineContacts>
+                <div>CONTACT</div>
+
+            </div>
+            <div className="nav__icon" onClick={
+                () => {
+                    setIndex(2)
+                    passData(2)
+                }
+            }>
+                <IoIosNotifications className="iconNav notif_icon"></IoIosNotifications>
+                <div>DESCRIPTION</div>
+            </div>
+
+            {props.index !== 0 ?
+                <div
+                    className="nav__icon showRight" onClick={() => {
+                        // props.next()
+                        passData(index === 0 ? 0 : index - 1)
                     }
-                } className="iconNav notif_icon"></IoIosNotifications>
-              {index!==0?<MdNavigateBefore onClick={() => {
-                    // props.next()
-                    passData(index===0?0:index-1)
-                }} className="iconNav showRight back_icon"></MdNavigateBefore>:<MdNavigateBefore className="iconNav hideRight back_icon"></MdNavigateBefore>}
-            
-            
+                    }
+
+                ><MdNavigateBefore className="iconNav"></MdNavigateBefore>
+                    <div>PREVIOUS</div>
+                </div>
+                : <div className="nav__icon"> <MdNavigateBefore className="iconNav hideRight "></MdNavigateBefore> </div>
+
+            }
+
             {/* AiOutlineContacts */}
-            
+
 
         </div>)
 

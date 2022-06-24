@@ -1,38 +1,70 @@
-
 .containerNav {
     position: fixed;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.5rem;
-    /* margin: 0.5rem; */
-    /* background: hsl(550, 80%, 30%); */
+    padding: 0;
+    margin: 1rem;
+    background: rgba(15, 117, 138, .5);
     height: 10%;
-    width: 100%;
+    /* width: 30em; */
     left: 50%;
     bottom: 1%;
     transform: translateX(-50%);
     border-radius: 30px;
     transition-duration: 1s;
+
 }
 
 .iconNav {
-    padding: 0.5rem;
-    margin: 0.5rem;
+    /* padding: 0 .5rem; */
+    /* margin: 0 0.5rem; */
     font-size: 1.5rem;
-    border-radius: 15px;
-    transition-duration: 0.5s;
+    /* border-radius: 15px; */
+    transition-duration: 1s;
 
 }
 
-.iconNav:hover {
-    font-size: 1.5rem;
-    background: hsl(600, 80%, 30%);
 
-    color: white;
 
+
+.nav__icon {
+    text-align: center;
+    font-weight: 700;
+    width: 10rem;
 }
 
-.containerNav:hover{
-    font-size: 1.2rem;
+.nav__icon>div {
+    width: 150px;
+    visibility: hidden;
+    transition-duration: .5s;
+    position: relative;
+    bottom: -4em;
+    color: hsl(600, 80%, 30%);
+    /* Left: 10%; */
+    /* top: 0; */
+}
+
+/* 
+.nav__icon>.iconNav {
+    position: relative;
+   
+    bottom: 50%;
+    transform: translateY(50%);
+    
+} */
+
+.nav__icon:hover div {
+    visibility: visible;
+    transform: translateY(-4em);
+}
+
+
+.nav__icon:hover .iconNav {
+    font-size: 2rem;
+    color: hsl(600, 80%, 30%);
+    transform: translateY(-1em);
+    border-radius: 200px;
+    background-color: hsl(605, 80%, 70%);
+    padding: .4rem;
 }
