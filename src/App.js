@@ -57,6 +57,7 @@ export default class App extends Component {
 
     }
 
+
     next() {
         // console.log(index);
         this.setState({
@@ -99,6 +100,20 @@ export default class App extends Component {
 
     }
     render() {
+
+        // window.addEventListener('keydown', function (event) {
+        //     if (event.key === "ArrowLeft") {
+        //         console.log("prev")
+        //         this.prev()
+
+        //     } else if (event.key === "ArrowRight") {
+        //         console.log("next")
+        //         this.next()
+        //     }
+
+        // })
+
+
         // const [nextPage, setNextPage] = useState(true);
         // const [index, setIndex] = useState(0);
         //
@@ -134,9 +149,8 @@ export default class App extends Component {
         }
 
 
-
         // console.log(index)
-        return (<div>
+        return (<div >
             <NavBar passData={this.passData} next={this.next} prev={this.prev} index={this.state.index} />
             <IoCaretForward onClick={() => {
                 this.next()
@@ -147,7 +161,7 @@ export default class App extends Component {
             <div className="container-test">
                 <div
                     className={"item item1 ".concat(classNavName(0))}>
-                    <Start />
+                    {this.state.index !== 2 ? <Start /> : <div></div>}
                 </div>
                 <div
                     className={"item item2  ".concat(classNavName(1))}>

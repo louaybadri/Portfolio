@@ -1,3 +1,5 @@
+@import url(../../config/config.css);
+
 .containerNav {
     position: fixed;
     display: flex;
@@ -5,7 +7,7 @@
     align-items: center;
     padding: 0;
     margin: 1rem;
-    background: rgba(15, 117, 138, .5);
+    background: var(--hslColor2);
     height: 10%;
     /* width: 30em; */
     left: 50%;
@@ -20,8 +22,10 @@
     /* padding: 0 .5rem; */
     /* margin: 0 0.5rem; */
     font-size: 1.5rem;
-    /* border-radius: 15px; */
-    transition-duration: 1s;
+    transition-duration: .5s;
+    border-radius: 15px;
+    border-color: var(--bgColor);
+    border-width: 6px;
 
 }
 
@@ -39,8 +43,7 @@
     visibility: hidden;
     transition-duration: .5s;
     position: relative;
-    bottom: -4em;
-    color: hsl(600, 80%, 30%);
+    bottom: -4.5em;
     /* Left: 10%; */
     /* top: 0; */
 }
@@ -56,15 +59,16 @@
 
 .nav__icon:hover div {
     visibility: visible;
-    transform: translateY(-4em);
+    transform: translateY(-6em);
 }
 
 
 .nav__icon:hover .iconNav {
+    border-style: solid;
     font-size: 2rem;
-    color: hsl(600, 80%, 30%);
-    transform: translateY(-1em);
+    color: var(--hslColor3);
+    transform: translateY(-1.2em);
     border-radius: 200px;
-    background-color: hsl(605, 80%, 70%);
+    background-color: var(--hslColor1);
     padding: .4rem;
 }

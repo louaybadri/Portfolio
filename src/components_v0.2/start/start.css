@@ -1,7 +1,4 @@
-:root {
-    --color: 600deg;
-}
-
+@import url(../../config/config.css);
 
 div.container_start {
     height: 100vh;
@@ -18,20 +15,20 @@ div.container_start {
 }
 
 img {
-    background-image: linear-gradient(30deg, hsl(var(--color), 60%, 10%), hsl(var(--color), 60%, 100%));
+    background-image: linear-gradient(30deg, var(--hslColor1), var(--hslColor3));
     border-radius: 160px;
     width: 10em;
-    /* transition-duration: 0.5s; */
+    transition-duration: 0.5s;
 
 
 }
 
 img:hover {
     /* transition-duration: 0.5s; */
-    /* width: 15em; */
+    width: 15em;
     border-radius: 90px;
     /* letter-spacing: 2px; */
-    background-image: linear-gradient(20deg, hsl(var(--color), 60%, 10%), hsl(var(--color), 60%, 100%));
+    background-image: linear-gradient(20deg, var(--hslColor3), var(--hslColor1));
     /* transform: rotate(30deg); */
     /* background-color: yellow; */
 }
