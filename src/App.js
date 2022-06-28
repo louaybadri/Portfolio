@@ -161,7 +161,7 @@ export default class App extends Component {
             <div className="container-test">
                 <div
                     className={"item item1 ".concat(classNavName(0))}>
-                    {this.state.index !== 2 ? <Start /> : <div></div>}
+                    <Start />
                 </div>
                 <div
                     className={"item item2  ".concat(classNavName(1))}>

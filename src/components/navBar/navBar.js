@@ -29,7 +29,7 @@ function NavBar(props) {
 
                     <div>NEXT</div>
                 </div>
-                : <div className="nav__icon hideLeft "><MdNavigateNext ></MdNavigateNext>
+                : <div className="nav__icon hideLeft "><MdNavigateNext className="iconNav"></MdNavigateNext>
 
                 </div>}
 
@@ -38,14 +38,14 @@ function NavBar(props) {
                 setIndex(0)
                 passData(0)
             }}>
-                <FaHome className="iconNav"></FaHome>
+                <FaHome className={"iconNav".concat(props.index === 0 ? " active" : " ")}></FaHome>
                 <div>INTRODUCTION</div>
             </div>
             <div className="nav__icon" onClick={() => {
                 setIndex(1)
                 passData(1)
             }}>
-                <AiOutlineContacts className="iconNav "></AiOutlineContacts>
+                <AiOutlineContacts className={"iconNav".concat(props.index === 1 ? " active" : " ")}></AiOutlineContacts>
                 <div>CONTACT</div>
 
             </div>
@@ -55,7 +55,7 @@ function NavBar(props) {
                     passData(2)
                 }
             }>
-                <IoIosNotifications className="iconNav notif_icon"></IoIosNotifications>
+                <IoIosNotifications className={"iconNav".concat(props.index === 2 ? " active" : " ")}></IoIosNotifications>
                 <div>DESCRIPTION</div>
             </div>
 

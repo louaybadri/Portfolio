@@ -109,24 +109,23 @@
 
 
 
-#root {
-    margin: 0;
-}
 
 .container-test {
-    position: relative;
+    /* position: relative; */
     /* display: flex; */
-    top: 0;
-    left: 0;
-    width: 100%;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* width: 100%; */
     /*border: black solid 1px;*/
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: redpx */
+
 }
 
 .item {
-    width: 100%;
-    position: absolute;
+    /* width: 100%; */
+    /* position: absolute; */
     /*visibility: hidden;*/
 }
 

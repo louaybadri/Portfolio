@@ -53,25 +53,23 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
+    width: 100vw;
     height: 100vh;
     /* width: 100%; */
     /*border: solid black 2px;*/
-    /* background-image: linear-gradient(45deg, var(--hslColor1), var(--hslColor4)); */
+    /* background-image: linear-gradient(69deg, var(--hslColor1), var(--hslColor4)) */
     background-color: var(--bgColor);
     /*background-color: red;*/
 }
 
-#root {
-    /* margin: 10%; */
-    /* padding: 10%; */
-    height: 100vh;
-    /* width: 90%; */
-}
 
-.centeredApp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* background-color: red; */
+
+
+.page {
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    transform: translate(-50%, -53%);
+    background-color: hsla(0, 0%, 0%, 0.4);
+
 }

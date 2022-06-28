@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 // import "./desc.css";
 
@@ -6,7 +6,7 @@ import React, {Component} from "react";
 class Contact extends Component {
     render() {
         return (
-            <div className="centeredApp">
+            <div className="container_start page">
                 <div>Hello</div>
                 <h1>This is the Contact</h1>
             </div>

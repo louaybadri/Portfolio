@@ -1,7 +1,7 @@
 @import url(../../config/config.css);
 
 div.container_start {
-    height: 100vh;
+    /* height: 100vh; */
     /* width: 100vh; */
     display: flex;
     justify-content: space-around;
@@ -18,20 +18,20 @@ img {
     background-image: linear-gradient(30deg, var(--hslColor1), var(--hslColor3));
     border-radius: 160px;
     width: 10em;
-    transition-duration: 0.5s;
-
-
-}
-
-img:hover {
     /* transition-duration: 0.5s; */
-    width: 15em;
-    border-radius: 90px;
-    /* letter-spacing: 2px; */
-    background-image: linear-gradient(20deg, var(--hslColor3), var(--hslColor1));
-    /* transform: rotate(30deg); */
-    /* background-color: yellow; */
+
+
 }
+
+/* img:hover {
+        transition-duration: 0.5s;
+        width: 15em;
+        border-radius: 90px;
+        letter-spacing: 2px;
+        background-image: linear-gradient(20deg, var(--hslColor3), var(--hslColor1));
+        transform: rotate(30deg);
+        background-color: yellow;
+    } */
 
 /* .container_start:hover .welcome {
     transition-duration: 0.5s;
