@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import React, { useState } from "react";
 import "./nav.css"
+import NavItem from "../../components_v0.2/navBar/nav_item/nav_item";
 
 function NavBar(props) {
 
@@ -14,6 +15,7 @@ function NavBar(props) {
         props.passData(data)
         setIndex(data)
     }
+    const component = <FaHome className={"iconNav".concat(props.index === 0 ? " active" : " ")}></FaHome>
 
     return (
         <div className="containerNav">
@@ -33,8 +35,8 @@ function NavBar(props) {
 
                 </div>}
 
-
-            <div className="nav__icon" onClick={() => {
+            <NavItem setIndex={setIndex} passData={passData} index={0} title={"introduction"} component={component} />
+            {/* <div className="nav__icon" onClick={() => {
                 setIndex(0)
                 passData(0)
             }}>
@@ -57,7 +59,7 @@ function NavBar(props) {
             }>
                 <IoIosNotifications className={"iconNav".concat(props.index === 2 ? " active" : " ")}></IoIosNotifications>
                 <div>DESCRIPTION</div>
-            </div>
+            </div> */}
 
             {props.index !== 0 ?
                 <div

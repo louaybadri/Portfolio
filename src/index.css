@@ -70,6 +70,9 @@ body {
     width: 70vw;
     height: 70vh;
     transform: translate(-50%, -53%);
-    background-color: hsla(0, 0%, 0%, 0.4);
+    background-color: hsla(0, 0%, 0%, 0.3);
+    /* opacity: .2; */
+    border-radius: 70px;
+    box-shadow: 0 0 30px 30px hsla(0, 0%, 0%, 0.5);
 
 }

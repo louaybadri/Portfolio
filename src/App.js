@@ -1,47 +1,9 @@
 import React, { Component, useCallback, useState } from "react";
-// import {} from "@types/react";
-import Start from "./components_v0.2/start/start";
-import Description from "./components_v0.2/desc/desc";
+
 import { IoCaretBack, IoCaretForward } from "react-icons/io5";
-import Contact from "./components_v0.2/Contact/contact";
-// import Slider from "./components_v0.2/test/index"
 import "./app.css"
-import NavBar from "./components/navBar/navBar";
-//
-// export default function App() {
-//
-//
-//     //****************************************************************
-//
-//
-//     // const previousPage = pages[index]
-//
-//
-//     //****************************************************************
-//
-//     function goNext() {
-//         // setIndex((index + 1) % pages.length)
-//         setActive(true)
-//     }
-//
-//     function goPrev() {
-//         // index !== 0 ?
-//         //     setIndex(index - 1) : setIndex(pages.length - 1)
-//         setActive(false)
-//     }
-//
-//     // const [index, setIndex] = useState(0);
-//     const [active, setActive] = useState(true);
-//     // const pages = [<Start className={index === 0 ? "show" : "hide"}/>,
-//     //     <Description className={index === 1 ? "show" : "hide"}/>,
-//     //     <Contact className={index === 2 ? "show" : "hide"}/>]
-//     return (<div>
-//         <MdNavigateNext onClick={goNext} className="next_icon"/>
-//         <MdNavigateNext onClick={goPrev} className="prev_icon"/>
-//         <Start className={active === true ? "hide" : null}/>
-//     </div>);
-//
-// }
+import NavBar from "./components_v0.2/navBar/navBar";
+import items from "./components_v0.2/data/data"
 
 export default class App extends Component {
 
@@ -59,15 +21,12 @@ export default class App extends Component {
 
 
     next() {
-        // console.log(index);
         this.setState({
             previousPage: this.state.index,
             first: false,
             index: this.state.index === 2 ? 2 : (this.state.index + 1),
             nextPage: true,
         })
-
-        // setHidden(false)
     }
 
     prev() {
@@ -77,9 +36,6 @@ export default class App extends Component {
             first: false,
             index: this.state.index === 0 ? 0 : this.state.index - 1
         })
-        // setHidden(true)
-        // setNextPage(false)
-        // setFirst(false)
 
     }
     passData = (data) => {
@@ -100,24 +56,6 @@ export default class App extends Component {
 
     }
     render() {
-
-        // window.addEventListener('keydown', function (event) {
-        //     if (event.key === "ArrowLeft") {
-        //         console.log("prev")
-        //         this.prev()
-
-        //     } else if (event.key === "ArrowRight") {
-        //         console.log("next")
-        //         this.next()
-        //     }
-
-        // })
-
-
-        // const [nextPage, setNextPage] = useState(true);
-        // const [index, setIndex] = useState(0);
-        //
-        // const [, setFirst] = useState(true);
 
         const classNavName = (x) => {
             if (x === this.state.index && this.state.index === this.state.previousPage) {
@@ -148,8 +86,6 @@ export default class App extends Component {
                                 }
         }
 
-
-        // console.log(index)
         return (<div >
             <NavBar passData={this.passData} next={this.next} prev={this.prev} index={this.state.index} />
             <IoCaretForward onClick={() => {
@@ -159,18 +95,12 @@ export default class App extends Component {
                 this.prev()
             }} className={"prev_icon ".concat(this.state.index === 0 ? " hideRight" : " showRight")} />
             <div className="container-test">
-                <div
-                    className={"item item1 ".concat(classNavName(0))}>
-                    <Start />
-                </div>
-                <div
-                    className={"item item2  ".concat(classNavName(1))}>
-                    <Description />
-                </div>
-                <div
-                    className={"item item3 ".concat(classNavName(2))}>
-                    <Contact />
-                </div>
+                {items(this.props.index).map((value, index) => {
+                    return <div key={index}
+                        className={"item ".concat(classNavName(index))}>
+                        {value.page}
+                    </div>
+                })}
             </div>
         </div>
         )
