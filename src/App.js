@@ -33,8 +33,8 @@ export default class App extends Component {
         this.setState({
             previousPage: this.state.index,
             nextPage: false,
-            first: false,
-            index: this.state.index === 0 ? 0 : this.state.index - 1
+            index: this.state.index === 0 ? 0 : this.state.index - 1,
+            first: this.state.index === 0,
         })
 
     }
@@ -63,8 +63,6 @@ export default class App extends Component {
             } else
                 if (this.state.first && x === this.state.index) {
                     return ("showLeft")
-                } else if (this.state.first && x !== this.state.index && this.state.nextPage) {
-                    return ("hidden")
                 } else
                     /* next and not first and the right page */
                     if (!this.state.first && this.state.nextPage && x === this.state.index) {
@@ -80,7 +78,7 @@ export default class App extends Component {
                             } else
                                 /* prev and not first and not the right page */
                                 if (!this.state.first && !this.state.nextPage && (x === this.state.previousPage)) {
-                                    return "hideRight"
+                                    return "hidden"
                                 } else {
                                     return "hidden"
                                 }

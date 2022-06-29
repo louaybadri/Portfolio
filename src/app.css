@@ -43,7 +43,7 @@
 }
 
 .simpleShow {
-    animation: opacityWelcome ease 1s;
+    animation: opacityWelcome ease 4s;
     animation-iteration-count: unset;
     animation-fill-mode: forwards;
 

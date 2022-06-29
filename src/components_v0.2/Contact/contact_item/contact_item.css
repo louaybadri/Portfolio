@@ -1,0 +1,52 @@
+.contact_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.contact_item>.contact_item_icon:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: white;
+}
+
+.simpleShow {
+    animation: opacityWelcome ease 4s;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes opacityBWelcome {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.contact_item_inactive {
+    /* height: 10vh; */
+    width: 3vw;
+    border-radius: 90px;
+    transition: width 1s ease-in-out;
+}
+
+.contact_item>.contact_item_icon {
+    /* text-align: center; */
+    padding: 1em;
+    font-size: 2em;
+    border-radius: 90px;
+    transition: background-color .5s ease-in-out;
+}
+
+.contact_item_active {
+    width: 30vw;
+    border-radius: 90px;
+    /* background-color: rgba(0, 255, 0, 0.6); */
+
+    transition: width 1s;
+}
