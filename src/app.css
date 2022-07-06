@@ -59,67 +59,49 @@
 @keyframes fadeInAnimationLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: rotateY(-45deg);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: rotateY(0deg);
   }
 }
 
 @keyframes fadeInAnimationRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: rotateY(45deg);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: rotateY(0px);
   }
 }
 
 @keyframes fadeOutLeft {
   0% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: rotateY(0deg);
   }
 
   100% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: rotateY(-45deg);
   }
 }
 
 @keyframes fadeOutRight {
   0% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: rotateY(0deg);
   }
 
   100% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: rotateY(45deg);
   }
-}
-
-.container-test {
-  /* position: relative; */
-  /* display: flex; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  /* width: 100%; */
-  /*border: black solid 1px;*/
-  /* height: 100vh; */
-  /* background-color: redpx */
-}
-
-.item {
-  /* width: 100%; */
-  /* position: absolute; */
-  /*visibility: hidden;*/
 }
 
 .hidden {

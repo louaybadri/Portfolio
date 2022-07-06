@@ -1,0 +1,21 @@
+.skill {
+    /* background-color: red; */
+    text-align: center;
+    width: 5vw;
+    height: auto;
+    padding: 3em;
+    border-radius: 90px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: height 1s ease;
+}
+
+.skill:hover {
+    height: 4vh;
+    background-color: red;
+}
+
+.skill_icon {
+    padding: .5em;
+    margin: .3em;
+    background-color: aqua;
+}

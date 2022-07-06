@@ -100,15 +100,6 @@ export default class App extends Component {
           prev={this.prev}
           index={this.state.index}
         />
-        {/* <Link
-          to={
-            items(
-              this.state.index === items(0).length - 1
-                ? items(0).length - 1
-                : this.state.index + 1
-            ).link
-          }
-        > */}
         <IoCaretForward
           onClick={() => {
             this.next();
@@ -117,7 +108,6 @@ export default class App extends Component {
             this.state.index === 2 ? " hideLeft" : " showLeft"
           )}
         />
-        {/* </Link> */}
         <IoCaretBack
           onClick={() => {
             this.prev();

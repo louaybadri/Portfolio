@@ -3,7 +3,7 @@ import "./contact_item.css";
 const ContactItem = (props) => {
   const [active, setActive] = useState(props.active);
   return (
-    <div className={" contact_item "}>
+    <div className={active ? " contact_item is_active simpleShow" : " contact_item"}>
       <div
         onClick={() => {
           setActive(!active);
@@ -12,7 +12,7 @@ const ContactItem = (props) => {
       >
         {props.icon}
       </div>
-      <div className={"contact_item_Text simpleShow "}>
+      <div className={active ? "contact_item_Text simpleShow " : " simpleHide"}>
         <a href={props.url} target="blank">
           {props.title}
         </a>

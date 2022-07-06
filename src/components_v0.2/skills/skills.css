@@ -1,0 +1,7 @@
+.skills_page {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto auto;
+
+}
