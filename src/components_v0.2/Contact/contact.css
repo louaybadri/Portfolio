@@ -1,9 +1,9 @@
 .contact_page {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    column-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 1em;
+  /* padding: 10px; */
 }

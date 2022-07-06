@@ -1,52 +1,73 @@
 .contact_item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* width: 0vw; */
 
-
+  /* background-color: red; */
+  text-align: center;
+  padding: 3vh;
+  margin: 2vh;
 }
 
-.contact_item>.contact_item_icon:hover {
-    background-color: rgba(0, 255, 0, 0.2);
-    color: white;
+.contact_item:hover .contact_item_icon {
+  /* background-color: rgba(0, 255, 0, 0.2); */
+  color: white;
 }
 
 .simpleShow {
-    animation: opacityWelcome ease 4s;
-    animation-iteration-count: initial;
-    animation-fill-mode: forwards;
-
+  animation: opacityWelcome ease 4s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
 }
 
 @keyframes opacityBWelcome {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-.contact_item_inactive {
-    /* height: 10vh; */
-    width: 3vw;
-    border-radius: 90px;
-    transition: width 1s ease-in-out;
+.contact_item {
+  height: 10vh;
+  width: 3vw;
+  border-radius: 90px;
+  transition: width 1s ease-in-out, height 0.2s ease-out;
+
+  /* background-color: red; */
+  overflow: hidden;
 }
 
-.contact_item>.contact_item_icon {
-    /* text-align: center; */
-    padding: 1em;
-    font-size: 2em;
-    border-radius: 90px;
-    transition: background-color .5s ease-in-out;
+.contact_item > .contact_item_icon {
+  /* text-align: center; */
+  padding: 1em;
+  font-size: 2em;
+  border-radius: 90px;
+  transition: background-color 0.5s ease-in-out;
 }
 
-.contact_item_active {
-    width: 30vw;
-    border-radius: 90px;
-    /* background-color: rgba(0, 255, 0, 0.6); */
-
-    transition: width 1s;
+.contact_item:hover {
+  /* .contact_item_inactive:hover{   */
+  width: 20vw;
+  border-radius: 90px;
+  /* background-color: rgba(0, 255, 0, 0.6); */
+  height: 20vh;
+  transition: width 1s;
+}
+.contact_item:hover a {
+  animation: opacityWelcome ease 4s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+}
+a {
+  color: black;
+  font-family: sans-serif;
+  font-size: 2ch;
+  font-weight: 700;
+  letter-spacing: 2px;
+  /* text-underline-offset: unset; */
+  text-decoration: none;
 }

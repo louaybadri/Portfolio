@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App";
-// import "./app.css"
+import items from "./components_v0.2/data/data";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-    <App />
-)
+root.render(<App index={0} />);

@@ -1,134 +1,127 @@
 @import url(./config/config.css);
 
 .hideRight {
-    animation: fadeOutRight 1s;
-    animation-iteration-count: unset;
-    animation-fill-mode: forwards;
+  animation: fadeOutRight 1s;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
 }
 
 .hideLeft {
-    animation: fadeOutLeft 1s;
-    animation-iteration-count: unset;
-    animation-fill-mode: forwards;
+  animation: fadeOutLeft 1s;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
 }
 
-
 .showLeft {
-    animation: fadeInAnimationLeft ease 1s;
-    animation-iteration-count: unset;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimationLeft ease 1s;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
 }
 
 .showRight {
-    animation: fadeInAnimationRight ease 1s;
-    animation-iteration-count: unset;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimationRight ease 1s;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
 }
 
 .simpleHide {
-    animation: opacityBye ease 1s;
-    animation-iteration-count: unset;
-    animation-fill-mode: forwards;
-
+  animation: opacityBye ease 1s;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
 }
 
 @keyframes opacityBye {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 .simpleShow {
-    animation: opacityWelcome ease 4s;
-    animation-iteration-count: unset;
-    animation-fill-mode: forwards;
-
+  animation: opacityWelcome ease 1s;
+  animation-iteration-count: unset;
+  animation-fill-mode: forwards;
 }
 
-@keyframes opacityBWelcome {
-    0% {
-        opacity: 0;
-    }
+@keyframes opacityWelcome {
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInAnimationLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @keyframes fadeInAnimationRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @keyframes fadeOutLeft {
-    0% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
-    100% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 }
 
 @keyframes fadeOutRight {
-    0% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
-    100% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 }
 
-
-
-
 .container-test {
-    /* position: relative; */
-    /* display: flex; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    /* width: 100%; */
-    /*border: black solid 1px;*/
-    /* height: 100vh; */
-    /* background-color: redpx */
-
+  /* position: relative; */
+  /* display: flex; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* width: 100%; */
+  /*border: black solid 1px;*/
+  /* height: 100vh; */
+  /* background-color: redpx */
 }
 
 .item {
-    /* width: 100%; */
-    /* position: absolute; */
-    /*visibility: hidden;*/
+  /* width: 100%; */
+  /* position: absolute; */
+  /*visibility: hidden;*/
 }
 
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
