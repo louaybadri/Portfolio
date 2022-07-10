@@ -5,8 +5,18 @@ import Skill from "./skills/skill.js"
 const Skills = () => {
     const [index, setIndex] = useState(0)
     return (
-        <div className='skills_page page'>
-            <h3><Skill /> </h3>
+        <div className='page skills_page'>
+            <div className='skills_grid'>
+                <Skill />
+                <Skill />
+                <Skill /><Skill />
+                <Skill />
+                <Skill /><Skill />
+                <Skill />
+                <Skill /><Skill />
+                <Skill />
+                <Skill />
+            </div>
         </div>
     )
 }

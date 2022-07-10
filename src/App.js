@@ -105,7 +105,7 @@ export default class App extends Component {
             this.next();
           }}
           className={"next_icon ".concat(
-            this.state.index === 2 ? " hideLeft" : " showLeft"
+            this.state.index === items(0).length - 1 ? " hideLeft" : " showLeft"
           )}
         />
         <IoCaretBack

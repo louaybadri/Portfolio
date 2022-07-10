@@ -7,7 +7,7 @@
   /* background-color: red; */
   text-align: center;
   padding: 3vh;
-  margin: 2vh;
+  /* margin: 2vh; */
 }
 
 .contact_item:hover .contact_item_icon {
@@ -32,7 +32,7 @@
 } */
 
 .contact_item {
-  height: 5vh;
+  height: 7vh;
   width: 3vw;
   border-radius: 90px;
   transition: width 1s ease-in-out, height 0.2s ease-out;
@@ -42,7 +42,7 @@
 .contact_item .contact_item_icon {
   /* text-align: center; */
   padding: 1em;
-  font-size: 2em;
+  font-size: 3vh;
   border-radius: 90px;
   transition: background-color 0.5s ease-in-out;
 }

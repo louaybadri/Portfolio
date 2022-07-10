@@ -28,7 +28,7 @@ class NextItem extends Component {
             onClick={() => {
               // props.prev()
               this.props.passData(
-                this.props.index === 2 ? 2 : this.props.index + 1
+                this.props.index === items(0).length - 1 ? items(0).length - 1 : this.props.index + 1
               );
             }}
           >
