@@ -3,7 +3,7 @@ import "./contact.css";
 import ContactItem from "./contact_item/contact_item";
 // import "./desc.css";
 
-import { BsLinkedin, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsFacebook, BsInstagram, BsTwitter, BsPhone } from "react-icons/bs";
 function Contact(props) {
   return (
     <div className="contact_page page">
@@ -26,6 +26,11 @@ function Contact(props) {
         icon={<BsInstagram />}
         title={"/louayelbadri"}
         url={"https://www.instagram.com/louayelbadri/"}
+      />
+      <ContactItem
+        icon={<BsPhone />}
+        title={"+216 56 427 403"}
+
       />
     </div>
   );
