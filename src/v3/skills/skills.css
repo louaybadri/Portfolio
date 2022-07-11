@@ -1,0 +1,17 @@
+.skills_grid {
+    /* background-color: green; */
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto auto;
+    height: 90%;
+    width: 90%;
+    /* row-gap: 0em; */
+
+}
+
+.skills_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

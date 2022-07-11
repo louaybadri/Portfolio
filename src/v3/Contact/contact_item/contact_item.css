@@ -1,0 +1,37 @@
+.contact_item {
+  text-align: center;
+  padding: 1vh;
+  height: 7vh;
+  width: 6vw;
+  border-radius: 90px;
+  transition: width 1s ease-in-out, height 1s ease-out;
+  overflow: hidden;
+  cursor: help;
+}
+
+.contact_item .contact_item_icon {
+  /* text-align: center; */
+  /* padding: 1em; */
+  font-size: 3vh;
+  border-radius: 90px;
+  margin: 3vh;
+}
+
+
+
+.is_active {
+  width: 20vw;
+  border-radius: 90px;
+  height: 20vh;
+  transition: width 1s;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  font-family: sans-serif;
+  font-size: 2ch;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+}

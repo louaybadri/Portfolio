@@ -94,12 +94,7 @@ export default class App extends Component {
 
     return (
       <div>
-        <NavBar
-          passData={this.passData}
-          next={this.next}
-          prev={this.prev}
-          index={this.state.index}
-        />
+
         <IoCaretForward
           onClick={() => {
             this.next();
@@ -124,6 +119,12 @@ export default class App extends Component {
               </div>
             );
           })}
+          <NavBar
+            passData={this.passData}
+            next={this.next}
+            prev={this.prev}
+            index={this.state.index}
+          />
         </div>
       </div>
     );

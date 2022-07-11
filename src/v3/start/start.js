@@ -11,7 +11,7 @@ class Start extends Component {
             <h1>Louay Badri</h1> <h2>Software Engineer</h2>
           </div>
           <div className="img">
-            <img className="img_start" src={ME} alt="image not found" />
+            <img src={ME} alt="image not found" />
           </div>
         </div>
       </div>

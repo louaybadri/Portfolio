@@ -1,9 +1,6 @@
 @import url(../../config/config.css);
 
 div.container_start {
-    /* background-color: #00000044; */
-    /* height: 100vh; */
-    /* width: 100vh; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,11 +29,4 @@ img {
     width: 25vh;
     border-radius: 160px;
     background-color: var(--hslColor2);
-    transform: rotateY(0deg);
-    transition: transform 1.5s;
-}
-
-
-.container_start:hover .img {
-    transform: rotateY(30deg)
 }

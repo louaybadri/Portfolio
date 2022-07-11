@@ -1,8 +1,8 @@
 :root {
     --color: ;
-    --hslColor1: hsl(190, 50%, 30%);
-    --hslColor3: hsl(190, 50%, 70%);
-    --hslColor4: hsl(190, 50%, 90%);
-    --hslColor2: hsl(190, 50%, 50%);
-    --bgColor: hsla(190deg, 80%, 30%);
+    --hslColor1: hsl(0, 1%, 0%, .1);
+    --hslColor2: hsl(0, 1%, 0%, .3);
+    --hslColor3: hsl(0, 1%, 0%, .5);
+    --hslColor4: hsl(0, 1%, 0%, .7);
+    --bgColor: hsla(0, 1%, 0%, 0.9);
 }
