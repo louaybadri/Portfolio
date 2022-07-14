@@ -4,7 +4,7 @@ import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import items from "../../data/data";
 class NavItem extends Component {
   render() {
-    return (
+    return (<a href={"#".concat(this.props.id)}>
       <div
         className="nav__icon"
         onClick={() => {
@@ -14,7 +14,7 @@ class NavItem extends Component {
       >
         {this.props.component}
         <div>{this.props.title}</div>
-      </div>
+      </div></a>
     );
   }
 }

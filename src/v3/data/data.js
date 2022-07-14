@@ -1,7 +1,8 @@
 import { AiOutlineContacts } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
-import { IoIosNotifications } from "react-icons/io";
-import { RiComputerLine } from "react-icons/ri"
+import { MdOutlineDescription } from "react-icons/md";
+import { RiComputerLine } from "react-icons/ri";
+import { GrProjects } from "react-icons/gr"
 import Start from "../start/start";
 import Description from "../desc/desc";
 import Contact from "../Contact/contact";
@@ -11,41 +12,45 @@ const items = (index) => {
     {
       title: "INTRODUCITON",
       element: (
-        <FaHome className={"iconNav".concat(index === 0 ? " active" : " ")} />
+        <FaHome className={"iconNav simpleShow"} />
       ),
-      page: <Start />,
+      page: <Start id="start" />,
       link: "/introduction",
+      id: 'start'
     },
     {
-      title: "NOTIF",
+      title: "DESCRIPTION",
       element: (
-        <IoIosNotifications
-          className={"iconNav".concat(index === 1 ? " active" : " ")}
+        <MdOutlineDescription
+          className={"iconNav simpleShow"}
         />
       ),
-      page: <Description />,
+      page: <Description id='description' />,
       link: "/notif",
+      id: 'description'
     },
 
     {
       title: "SKILLS",
       element: (
         <RiComputerLine
-          className={"iconNav".concat(index === 2 ? " active" : " ")}
+          className={"iconNav simpleShow"}
         />
       ),
-      page: <Skills />,
+      page: <Skills id='skills' />,
       link: "/skills",
+      id: 'skills'
     },
     {
       title: "CONTACT",
       element: (
         <AiOutlineContacts
-          className={"iconNav".concat(index === 3 ? " active" : " ")}
+          className={"iconNav simpleShow"}
         />
       ),
-      page: <Contact />,
+      page: <Contact id='contact' />,
       link: "/contact",
+      id: 'contact'
     }
   ];
 };

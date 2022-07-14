@@ -6,7 +6,7 @@ import ContactItem from "./contact_item/contact_item";
 import { BsLinkedin, BsFacebook, BsInstagram, BsTwitter, BsPhone } from "react-icons/bs";
 function Contact(props) {
   return (
-    <div className="contact_page page">
+    <div id={props.id} className="contact_page page">
       <ContactItem
         icon={<BsLinkedin />}
         title={"LinkedIn"}

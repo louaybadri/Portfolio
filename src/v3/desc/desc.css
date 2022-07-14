@@ -1,0 +1,16 @@
+.container_description p {
+    width: 40vw;
+    text-align: center;
+}
+
+.container_description {
+    font-size: 4ch;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.container_description div {
+    font-weight: bold;
+}

@@ -1,9 +1,9 @@
 :root {
     --color: ;
-    --hslColor1: white;
-    --hslColor2: hsl(0, 1%, 0%, .3);
-    --hslColor3: hsl(0, 1%, 0%, .5);
-    --hslColor4: hsl(0, 1%, 0%, .7);
+    --hslColor1: hsla(0deg, 50%, 0%, .2);
+    --hslColor2: hsla(200deg, 100%, 50%, .9);
+    --hslColor3: white;
+    --hslColor4: white;
     /* --bgColor: hsla(0, 1%, 0%, 0.9); */
     --bgColor: white;
 }

@@ -16,21 +16,19 @@ function NavBar(props) {
 
   return (
     <div className="containerNav">
-      <NextItem index={props.index} passData={passData} />
 
       {items(props.index).map((value, index) => {
         return (
           <NavItem
+            className=" simpleShow"
+            id={value.id}
             key={index}
-            setIndex={setIndex}
-            passData={passData}
             index={index}
             title={value.title}
             component={value.element}
           />
         );
       })}
-      <PrevItem index={props.index} passData={passData} />
     </div>
   );
 }
