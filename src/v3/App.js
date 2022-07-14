@@ -1,17 +1,18 @@
 import React from 'react'
 import items from "./data/data"
-
-const App = () => {
+import NavBar from "../v3/navBar/navBar"
+const App = (props) => {
     return (<div>
         {items(0).map((value) => {
             return <div>
-                {value.page}
 
+                {value.page}
             </div>
 
 
         })
         }
+        <NavBar />
     </div>
     )
 }

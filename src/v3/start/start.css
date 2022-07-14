@@ -1,8 +1,10 @@
 @import url(../../config/config.css);
 
-div.container_start {
+
+
+div .container_start {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -10,23 +12,31 @@ div.container_start {
     margin: 3em;
     text-align: center;
     letter-spacing: 2px;
-    transition-duration: 0.5s;
     letter-spacing: 5px;
     font-size: 2.2ch;
 
 }
 
-img {
+.image {
     position: relative;
-
-    border-radius: 160px;
-    width: 25vh;
-
-
+    border-radius: 50%;
 }
 
-.img {
-    width: 25vh;
-    border-radius: 160px;
+.welcome p {
+    width: 50vw;
+    text-align: center;
+}
+
+.start_img div {
+    position: relative;
+    bottom: 0;
+    /* width: 25vh; */
+    height: 5vh;
+    border-radius: 50%;
     background-color: var(--hslColor2);
+}
+
+.start_img {
+    /* display: flex; */
+    height: 50vh;
 }

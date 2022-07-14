@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { IoCaretBack, IoCaretForward } from "react-icons/io5";
 import "./app.css";
-import NavBar from "./components_v0.2/navBar/navBar";
-import items from "./components_v0.2/data/data";
+import NavBar from "./v3/navBar/navBar";
+import items from "./v3/data/data";
 // import { BrowserRouter, Link, Route, Router, Routes } from "react-router-dom";
 export default class App extends Component {
   constructor(props) {
